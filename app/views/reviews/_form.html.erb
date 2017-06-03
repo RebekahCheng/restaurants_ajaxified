@@ -1,6 +1,6 @@
-<%= simple_form_for([ restaurant, review ]) do |form| %>
-  <%= f.input :content, as: :text %>
-  <%= f.button :submit %>
+<%= simple_form_for([ restaurant, review ], remote: true) do |form| %>
+  <%= form.input :content, as: :text %>
+  <%= form.button :submit %>
 <% end %>
 
 <!-- Because reviews are nested under restaurants,

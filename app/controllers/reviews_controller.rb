@@ -1,7 +1,5 @@
 class ReviewsController < ApplicationController
   # this allows anonymous reviews
-  skip_before_action :authenticate_user!
-
   def create
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review = Review.new(review_params)
@@ -19,6 +17,4 @@ class ReviewsController < ApplicationController
     # not sure about this line
     params.require(:review).permit(:content)
   end
-
 end
-

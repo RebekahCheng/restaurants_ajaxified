@@ -11,3 +11,4 @@ class RestaurantsController < ApplicationController
     # creating a review not saving it, so that simple form works
   end
 end
+

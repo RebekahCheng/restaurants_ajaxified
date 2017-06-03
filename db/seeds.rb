@@ -1,3 +1,5 @@
+Restaurant.destroy_all
+
 Restaurant.create!({
   name: "Granger & Co.",
   address: "175 Westbourne Grove, London W11 2SB"
