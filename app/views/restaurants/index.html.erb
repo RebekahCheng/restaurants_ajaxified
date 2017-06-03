@@ -1,7 +1,17 @@
-<h1>My Favourite London Restaurants</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="restaurants-index-title">
+        <h1>My Favourite Restaurants</h1>
+      </div>
+      <div class="restaurants-index-list">
+        <ul>
+          <% @restaurants.each do |restaurant|  %>
+          <li> <%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+          <% end  %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-<ul>
-  <% @restaurants.each do |restaurant|  %>
-  <li> <%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-  <% end  %>
-</ul>

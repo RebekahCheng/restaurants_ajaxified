@@ -1,0 +1,7 @@
+<%= simple_form_for([ restaurant, review ]) do |form| %>
+  <%= f.input :content, as: :text %>
+  <%= f.button :submit %>
+<% end %>
+
+<!-- Because reviews are nested under restaurants,
+you have to pass restaurant and review arguments in  -->

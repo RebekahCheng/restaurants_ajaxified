@@ -1,4 +1,9 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.restaurants-index-title {
+  text-align: center;
+}
+
+.restaurants-index-list {
+  li {
+    list-style-type: none;
+  }
+}
