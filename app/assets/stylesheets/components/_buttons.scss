@@ -1,0 +1,53 @@
+$main: #FFCCCC;
+
+.test {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.box {
+  position: relative;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  color: $main;
+}
+
+.item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all ease;
+}
+
+.bekah {
+  box-sizing: border-box;
+  border: 2px solid $main;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 50px;
+    transition: 0.4s all ease;
+    background: $main;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: white;
+    &:before {
+      width: 100%;
+      transition: 0.4s all ease;
+    }
+  }
+}

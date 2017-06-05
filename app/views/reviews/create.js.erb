@@ -1,0 +1,6 @@
+var newReview = $("<p><%= j @review.content %></p>").hide();
+$('#reviews').append(newReview);
+newReview.slideDown();
+
+// $('#reviews').append("<p><%= j @review.content %></p>");
+// $('#review_content').val('');

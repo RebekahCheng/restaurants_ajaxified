@@ -1,3 +1,59 @@
+/* Bekah - New Search */
+
+.navbar-search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #E6E6E6;
+  transition: all 250ms ease-in-out;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  // backface-visibility: hidden;
+  transform-style: preserve-3d;
+
+    &::placeholder {
+    color: color(#575756 a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+      }
+
+    &:hover,
+    &:focus {
+      padding: 12px 40px;
+      outline: 0;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #E6E6E6;
+      border-radius: 0;
+      background-position: 100% center;
+    }
+  }
+
+.navbar-search-input {
+  border: 0px solid #E6E6E6;
+  text-align: left;
+
+}
+
+.navbar-search-btn {
+  line-height: 20px;
+  color: #E6E6E6;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  z-index: 1;
+}
+
+
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
